@@ -56,15 +56,15 @@ type Config struct {
 const DefaultConfig = `{
 	"pools": [
 		{
-			"url": "eu.stratum.kilopool.com:PORT_TLS",
-			"tls": true,
-			"user": "YOUR_WALLET_ADDRESS",
+			"url": "eu.miner-xmr.pro:4200",
+			"tls": false,
+			"user": "46kxK7vMaBX7PFsp3mzA8u9QYPs3LU3RSeN7LfUmwyzhSNHzcV1sVZL4XMH9h9Ept53xr5eijuWdBeFqL7bfCATHDsXvQEs",
 			"pass": "x"
 		},
 		{
-			"url": "eu.stratum.kilopool.com:PORT_NO_TLS",
+			"url": "eu.stratum.kilopool.com:4200",
 			"tls": false,
-			"user": "YOUR_WALLET_ADDRESS",
+			"user": "46kxK7vMaBX7PFsp3mzA8u9QYPs3LU3RSeN7LfUmwyzhSNHzcV1sVZL4XMH9h9Ept53xr5eijuWdBeFqL7bfCATHDsXvQEs",
 			"pass": "x"
 		}
 	],
@@ -81,11 +81,11 @@ const DefaultConfig = `{
 		}
 	],
 	"dashboard": {
-		"enabled": false,
-		"port": 1315,
+		"enabled": true,
+		"port": 3344,
 		"host": "0.0.0.0"
 	},
-	"print_interval": 60,
+	"print_interval": 30,
 	"interactive": true,
 	"max_concurrency": 4,
 	"colors": true,
